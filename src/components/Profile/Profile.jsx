@@ -1,11 +1,11 @@
 import s from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return (
         <div>
-            <img src="https://botinki23.ru/static/img/mainpage/slider/slider_1.webp" alt=""/>
-            <div>ava+description</div>
+            <ProfileInfo/>
             <MyPosts/>
         </div>
     );
