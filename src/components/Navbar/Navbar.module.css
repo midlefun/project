@@ -11,3 +11,25 @@
 .active{
     color: gold;
 }
+
+.item_friends{
+    margin-top: 20px;
+}
+
+.friends{
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.friend{
+    margin: 5px;
+    text-align: center;
+}
+
+.friend img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 100px;
+}

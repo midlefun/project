@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../rendr";
+
 let state = {
     profilePage:{
         postsData: [
@@ -17,9 +19,30 @@ let state = {
             {id: 1, message: "Hi"},
             {id: 2, message: "How"},
             {id: 3, message: "Why"}
-        ]
+        ],
     },
 
+    navBar: {
+        friends:[
+            {id: 1, src: "https://botinki23.ru/static/img/logo.png", name:'Nik'},
+            {id: 1, src: "https://botinki23.ru/static/img/logo.png", name:'Nik'},
+            {id: 1, src: "https://botinki23.ru/static/img/logo.png", name:'Nik'},
+
+        ],
+    },
 }
+
+export let addPost = (postMessage)=>{
+    let newPost={
+        id:3,
+        message: postMessage,
+        likeCount: 0,
+    };
+
+    state.profilePage.postsData.push(newPost)
+    rerenderEntireTree()
+}
+
+
 
 export default state
