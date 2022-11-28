@@ -14,3 +14,13 @@
 .messages {
     padding: 10px;
 }
+
+.addmessages{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.addmessages button{
+    width: 100px;
+}
