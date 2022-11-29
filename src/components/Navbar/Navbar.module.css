@@ -12,6 +12,15 @@
     color: gold;
 }
 
+.friends_items{
+    display: flex;
+}
+
+.friends_item img{
+    width: 50px;
+    border-radius: 50px;
+}
+
 .item_friends{
     margin-top: 20px;
 }
