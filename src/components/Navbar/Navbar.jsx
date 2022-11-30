@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = (props) => {
 
+
     let state = props.state
 
     let friendItem = state.friends.map(friend => {

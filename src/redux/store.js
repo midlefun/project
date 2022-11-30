@@ -38,18 +38,16 @@ let store = {
     _callSubscriber() {
         console.log('state changed')
     },
-
     getState() {
         return this._state
     },
     subscribe(observer) {
         this._callSubscriber = observer; // наблюдатель патерн (observer)
     },
-
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action)
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action)
-        this._state.sidebarPage = sidebarReducer(this._state.sidebarPage, action)
+        this._state.navBar = sidebarReducer(this._state.navBar, action)
         this._callSubscriber(this._state)
     },
 }
